@@ -1,0 +1,14 @@
+{
+  "name": "essential-data-structures",
+  "version": "0.0.3",
+  "description": "Essential data structures for JavaScript and TypeScript",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepare": "npm run clean && npm run build",
+    "clean": "rm -rf dist",
+    "build": "tsc"
+  },
+  "author": "Ramon Brand",
+  "license": "ISC"
+}
