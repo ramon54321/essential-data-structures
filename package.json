@@ -1,6 +1,6 @@
 {
   "name": "essential-data-structures",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Essential data structures for JavaScript and TypeScript",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
