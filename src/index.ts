@@ -263,7 +263,15 @@ export class Queue<T> {
  * A map optimized for storing elements based on their X and Y coordinate
  */
 export class SpatialMap2D<T> {
+  private _isEmpty: boolean = true
   private readonly _map: any = {}
+
+  /**
+   * Return true if the map is empty
+   */
+  isEmpty(): boolean {
+    return this._isEmpty
+  }
 
   /**
    * Get an element from the map given it's X and Y coordinate
@@ -314,6 +322,9 @@ export class SpatialMap2D<T> {
    * Set an element into the map at the given X and Y coordinate
    */
   set(x: number, y: number, element: T) {
+    // Set isEmpty
+    this._isEmpty = false
+
     // Create xMap if it doesn't already exist
     if (this._map[x] === undefined) {
       this._map[x] = {}
